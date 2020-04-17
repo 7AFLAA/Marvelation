@@ -1,0 +1,21 @@
+{
+  "name": "Marvelation",
+  "version": "1.0.0",
+  "description": "**Team members**:  1- Sa'ed Al-Khateeb 2- Anolla Haddad 3- Amer Majdi  4- Sahar Khaled",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7AFLAA/Marvelation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7AFLAA/Marvelation/issues"
+  },
+  "homepage": "https://github.com/7AFLAA/Marvelation#readme"
+}
