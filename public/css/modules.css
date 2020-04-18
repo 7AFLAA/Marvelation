@@ -1,0 +1,204 @@
+
+header{
+    background-color: darkred;
+    color:whitesmoke;
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+}
+.a {
+    background-color: darkred;
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.b {
+ 
+    font-size: 20px;
+    font-weight: bold;}
+
+.c{
+    background-color: rgb(50, 50, 149);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.d{
+    background-color: rgb(48, 48, 172);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.e{
+    background-color: rgb(56, 56, 236);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.f{
+    background-color:  rgb(110, 110, 206);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.g{
+    background-color: rgb(163, 156, 228);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.h{
+    background-color: rgb(109, 109, 151);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ifooter{
+    background-color:  blue;
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* desktop */
+@media screen and (min-width:760px) and (max-width:960px){
+   
+header{
+    background-color: darkred;
+    color:whitesmoke;
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+}
+.a {
+    background-color: darkred;
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.b {
+    /* background-color: rgb(17, 17, 114);
+    color:whitesmoke; */
+    font-size: 20px;
+    font-weight: bold;
+}
+.c{
+    background-color: rgb(50, 50, 149);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.d{
+    background-color: rgb(48, 48, 172);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.e{
+    background-color: rgb(56, 56, 236);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.f{
+    background-color:  rgb(110, 110, 206);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.g{
+    background-color: rgb(163, 156, 228);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.h{
+    background-color: rgb(109, 109, 151);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ifooter{
+    background-color:  blue;
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+    
+
+} 
+
+/* tablet */
+@media screen and (min-width: 560px){
+   
+header{
+    background-color: darkred;
+    color:whitesmoke;
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+}
+.a {
+    background-color: darkred;
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.b {
+    /* background-color: rgb(17, 17, 114);
+    color:whitesmoke; */
+    font-size: 20px;
+    font-weight: bold;
+}
+.c{
+    background-color: rgb(50, 50, 149);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.d{
+    background-color: rgb(48, 48, 172);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.e{
+    background-color: rgb(56, 56, 236);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.f{
+    background-color:  rgb(110, 110, 206);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.g{
+    background-color: rgb(163, 156, 228);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.h{
+    background-color: rgb(109, 109, 151);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ifooter{
+    background-color:  blue;
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+}

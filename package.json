@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/7AFLAA/Marvelation/issues"
   },
-  "homepage": "https://github.com/7AFLAA/Marvelation#readme"
+  "homepage": "https://github.com/7AFLAA/Marvelation#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "pg": "^8.0.2",
+    "superagent": "^5.2.2"
+  }
 }
