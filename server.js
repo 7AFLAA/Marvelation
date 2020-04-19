@@ -79,23 +79,23 @@ app.post('/searches', (req, res) => {
           console.log(comics);
 
 
-          res.render('SearchPage/pages/searches/show', { character: character, comics:comics});
+          res.render('pages/searches/show', { character: character, comics:comics});
         })
         .catch(error => {
 
-          res.render('SearchPage/error');
+          res.render('error');
         });
 
       // res.render('pages/searches/show', { character: character});
     })
     .catch(error => {
 
-      res.render('SearchPage/error');
+      res.render('error');
     });
 });
 
 app.get('*', function(req, res){
-  res.render('SearchPage/error');
+  res.render('error');
 });
 
 app.listen(PORT, () => console.log('listening from port', PORT));
