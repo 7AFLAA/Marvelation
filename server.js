@@ -151,7 +151,7 @@ app.post('/delete', (req,res) =>
       console.log(print, err);
     });
 });
-
+/////////////////////////////////finish search and add delete function
 
 app.get('*', function(req, res){
   res.render('error');
