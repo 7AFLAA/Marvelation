@@ -29,6 +29,28 @@ const ts = process.env.TS;
 const pubKey = process.env.MARVEL_API_KEY;
 const hash = process.env.HASH;
 
+// const privKey = process.env.MARVEL_PRIVATE_KEY
+// const hash = md5(ts + privKey + pubKey)
+
+//Test Route
+app.get('/test', (req, res) => {
+  res.status(200).send('Hello ');
+});
+
+///////////////////////////////// Aboutus Route \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+app.get('/aboutus', aboutUsHandler)
+
+function aboutUsHandler(req, res) {
+  res.render('pages/aboutUs')  
+}
+
+
+
+
+///////////////////////////////////////////////////////
+
+//Render index
 // Render index
 app.get('/main', (req, res) => {
     res.render('index');
