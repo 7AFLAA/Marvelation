@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./layout/head') %>
+</head>
+<header>
+    <!-- <%- include('./layout/header') %> -->
+</header>
+
+<body>
+    <ul>
+        <% movies.forEach(element => { %>
+            <li>
+                <p>
+                    <%=element.title %>
+                </p>
+                <p><img src=<%=element.image_url %>></p>
+                <p>
+                    <%=element.overview%>
+                </p>
+                <p>
+                    <%=element.popularity%>
+                </p>
+            </li>
+            <% }) %>
+    </ul>
+</body>
+
+</html>
