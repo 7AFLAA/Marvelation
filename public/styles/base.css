@@ -1,5 +1,6 @@
 /* mobile */
-body{
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,15 +8,14 @@ body{
     background: url(https://wallpapercave.com/wp/wp2903386.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-overflow: scroll;
-
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: scroll;
 }
-header{
+
+header {
     height: 10%;
     display: flex;
     justify-content: center;
@@ -23,14 +23,15 @@ header{
     text-align: center;
     width: 100%;
 }
-main{
+
+main {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     height: 90%;
-} 
+}
 
 
 /* #form{
@@ -40,167 +41,207 @@ margin-bottom: 100px; */
 
 /* }  */
 
-
-
-h2{
-    color:white;
+h2 {
+    color: white;
     padding-top: 5px;
     font-size: 24px;
     width: auto;
     margin-bottom: 10px;
-   
-   
-    
 }
 
-
-#thesearchbox{
+#thesearchbox {
     width: auto;
     height: 50px;
-    color:white;
-    background-color:white;
+    color: white;
+    background-color: white;
     font-size: 16px;
     border-radius: 20px;
     margin-top: -40px;
-  
-    
- 
-   
 }
 
-#button{
-
+#button {
     width: auto;
     height: 50px;
-    color:white;
+    color: white;
     background-color: darkred;
     font-size: 24px;
     border-radius: 20px;
-   
 }
 
-
-p{
-color:white;
-font-size: 14px;;
+p {
+    color: white;
+    font-size: 14px;
+    ;
 }
 
 ol li {
-    color:whitesmoke;
-font-size: 14px;;
+    color: whitesmoke;
+    font-size: 14px;
+    ;
 }
 
-.co1{
-float: left;
-background-color:darkred;
-opacity: 0.5;
-border-radius: 20px;
-margin-top: 50px;
-margin-bottom: 50px;
-margin-left: 10px;
-margin-right: 100px;
-color:wheat;
-font-size: 40px;
-font-weight: bolder;
-
+.co1 {
+    float: left;
+    background-color: darkred;
+    opacity: 0.5;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 100px;
+    color: wheat;
+    font-size: 40px;
+    font-weight: bolder;
 }
 
-.co2{
+.co2 {
     float: left;
     background-color: darkred;
     opacity: 0.5;
     display: block;
     border-radius: 20px;
     margin-top: 50px;
-margin-bottom: 50px;
-margin-left: 10px;
-margin-right: 100px;
-color:wheat;
-font-size: 40px;
-font-weight: bolder;
-    
-    }
-  
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 100px;
+    color: wheat;
+    font-size: 40px;
+    font-weight: bolder;
+}
 
-    .co3{
-        float: left;
-        background-color:darkred;
-        opacity: 0.5;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 10px;
-        margin-right: 100px;
-        color:wheat;
-font-size: 40px;
-font-weight: bolder;
-        }
+.co3 {
+    float: left;
+    background-color: darkred;
+    opacity: 0.5;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 100px;
+    color: wheat;
+    font-size: 40px;
+    font-weight: bolder;
+}
 
-        .co4{
-            float: left;
-            background-color:darkred;
-            opacity: 0.5;
-            display: block;
-            border-radius: 20px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            margin-left: 10px;
-            margin-right: 100px;
-            color:wheat;
-            font-size: 40px;
-            font-weight: bolder;
-            }
+.co4 {
+    float: left;
+    background-color: darkred;
+    opacity: 0.5;
+    display: block;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 100px;
+    color: wheat;
+    font-size: 40px;
+    font-weight: bolder;
+}
 
-            .bookimage{
-            width: 350px;
-            height: 500px;
-            border-radius: 10px;
-            margin-top: 50;
-            float: left;
-            margin-top: 50px;
-        
-            }
+.co3 {
+    float: left;
+    background-color: darkred;
+    opacity: 0.5;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 100px;
+    color: wheat;
+    font-size: 40px;
+    font-weight: bolder;
+}
 
-            .thebookdetails{
-                float: left;
-                margin-left: 100px;
-                /* margin-right: 100px; */
-                margin-top: -450px;
-                padding-left: 260px;
-                
-            }
+.co4 {
+    float: left;
+    background-color: darkred;
+    opacity: 0.5;
+    display: block;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 100px;
+    color: wheat;
+    font-size: 40px;
+    font-weight: bolder;
+}
 
-            .booktitle{
-                font-size: 24px;
-            }
+.bookimage {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 50;
+    float: left;
+    margin-top: 50px;
+}
 
-            .p1{
-                color: darkred;
-                font-size: 30px;
-                font-weight: bolder;
-            }
+.thebookdetails {
+    float: left;
+    margin-left: 100px;
+    /* margin-right: 100px; */
+    margin-top: -450px;
+    padding-left: 260px;
+}
 
-            ol li {
+.booktitle {
+    font-size: 24px;
+}
 
-            font-size: 20px;
-            }
+.p1 {
+    color: darkred;
+    font-size: 30px;
+    font-weight: bolder;
+}
 
-          .com{
-              width: 400px;
-              height: 500px;
- 
-          }
-            /* tablet */
-@media screen and (min-width:560px){
-    main{
+ol li {
+    font-size: 20px;
+}
+
+.com {
+    width: 400px;
+    height: 500px;
+}
+
+.m-image {
+    width: 150px;
+    height: 200px;
+    margin-right: 40px;
+    border-radius: 300px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    float: right;
+    align-items: center;
+}
+
+.m-title {
+    width: 170px;
+    margin-left: 180px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.allbox {
+    margin-bottom: 10px;
+}
+
+
+/* tablet */
+
+@media screen and (min-width:560px) {
+    main {
         display: grid;
         grid-template-columns: 25% 75%;
     }
 }
 
+
 /* desktop */
-@media screen and (min-width:760px) and (max-width:960px){
-    main{
+
+@media screen and (min-width:760px) and (max-width:960px) {
+    main {
         display: grid;
         grid-template-columns: 25% 75%;
     }

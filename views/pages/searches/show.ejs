@@ -8,7 +8,6 @@
 <body>
     <%
 
-
     function Character(data) {
         this.name = (data.name)? data.name : 'N/A';
         this.description = (data.description)?data.description: 'N/A';
@@ -112,6 +111,14 @@
 
                 <p class="booktitle"> Description :  <%= data.description %></p><br><br>
                 <p class="booktitle">Modified :   <%= data.modified %></p><br><br>
+                <form action ='/addmarvel' method="POST" class="marveltitle">
+                  <input type="hidden" name="name" value="<%=data.name%>"/>
+                  <input type="hidden" name="image" value="<%=data.thumbnail%>"/>
+                  <input type="hidden" name="desc" value="<%=data.description%>"/>
+                  <button class="marveltitle" type="submit"> Save to favorite </button>
+
+      
+              </form>
                 <!-- <p class="booktitle">resourceURI <%= data.resourceURI %></p> -->
                 <!-- <p class="bookauthor"> urls <%=data.urls%></p> -->
             </div><br>
@@ -130,11 +137,6 @@
         %>
         </ol>
 
-
-
-
-
-           
         </div><br><br>
 
 
