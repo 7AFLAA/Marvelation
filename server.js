@@ -13,47 +13,58 @@ const pg = require('pg');
 
 const superagent = require('superagent');
 
-const PORT = process.env.PORT || 3000;
-
+const PORT = process.env.PORT || 4000;
 const app = express();
-
+const client = new pg.Client(process.env.DATABASE_URL);
 app.use(cors());
 
-const client = new pg.Client(process.env.DATABASE_URL);
 app.use(express.json());
+
 app.use(express.static('./public'));
+
 app.use(express.urlencoded({ extended: true }));
+
 app.set('view engine', 'ejs');
 const ts =  process.env.TS;
 const pubKey = process.env.MARVEL_API_KEY;
 const hash = process.env.HASH;
 
-// const privKey = process.env.MARVEL_PRIVATE_KEY
-// const hash = md5(ts + privKey + pubKey)
-
-//Test Route
-app.get('/test', (req, res) => {
-  res.status(200).send('Hello ');
+// Render index
+app.get('/main', (req, res) => {
+  res.render('index');
 });
 
-//Render index
-// app.get('/main', (req, res) => {
-//   res.render('index');
-// });
-// app.get('/', (req, res) => {
-//   res.render('index');
-// });
+app.get('/',(req,res)=>{
+  let url =`http://gateway.marvel.com/v1/public/characters?&limit=100&ts=${ts}&apikey=${pubKey}&hash=${hash}`;
+  superagent(url).then( results =>{
+    const apiData = results.body.data.results;
+    res.render('home' , {favChar:apiData});
+    let a7a = apiData.map(data=>{
+      let homeChar = new CharecthersOfHomePage(data);
+      let SQL = 'INSERT INTO home (char_name,thumbnail,rating) VALUES ($1,$2,$3);';
+      const safeValues = [homeChar.name,homeChar.thumbnail,0];
+      client.query(SQL,safeValues);
+    });
 
-// app.get('/search', (req, res) => {
-//   res.render('index');
-// });
+  });
+});
 
-app.get('/', (req, res) => {
+
+
+
+function CharecthersOfHomePage(data){
+  this.name = data.name;
+  this.thumbnail = (data.thumbnail)?`${data.thumbnail.path}/portrait_xlarge.jpg`:'no image';
+  this.rating = 0;
+}
+
+////////////////////////////////////////// HERE IS THE END OF HOME PAGE CODE ///////////////////////
+
+app.get('/redirect', (req, res) => {
   let SQL = 'SELECT * FROM marvel ';
   client.query(SQL)
     .then(data => {
       res.render('index', { marvels: data.rows });
-      // res.render('pages/indexshow');
     });
 
 });
@@ -128,7 +139,7 @@ app.post('/addmarvel', (req,res) =>
 
   client.query(SQL, values)
     .then(() => {
-      res.redirect('/');
+      res.redirect('/redirect');
     }).catch(function(err) {
       console.log(print, err);
     });
@@ -146,7 +157,7 @@ app.post('/delete', (req,res) =>
 
   client.query(SQL, values)
     .then(() => {
-      res.redirect('/');
+      res.redirect('/redirect');
     }).catch(function(err) {
       console.log(print, err);
     });
@@ -168,5 +179,3 @@ client
   .catch((err) => {
     throw new Error(`startup error ${err}`);
   });
-
-
