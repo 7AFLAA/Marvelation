@@ -39,10 +39,10 @@ app.get('/test', (req, res) => {
 
 ///////////////////////////////// Aboutus Route \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-app.get('/aboutus', aboutUsHandler)
+app.get('/aboutus', aboutUsHandler);
 
 function aboutUsHandler(req, res) {
-  res.render('pages/aboutUs')  
+  res.render('pages/aboutUs');
 }
 
 
