@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('layout/head') %> 
+
+</head>
+
+<body>
+ 
+<header>
+    <%- include('layout/header') %> 
+
+</header>
+<main>
+    <% favChar.forEach( element => { %>
+         <div>
+        <img src=<%= element.thumbnail.path%>/portrait_xlarge.jpg>
+        <h1><%= element.name %> </h1>
+    </div>
+         
+    <% }); %>
+
+</main>
+<footer></footer>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

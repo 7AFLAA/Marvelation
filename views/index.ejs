@@ -33,7 +33,7 @@
 
                     <!--============================================-->
                     <li class="ss-navs-item">
-                        <a id="ss-calender" href="/" class="nav-link">
+                        <a id="ss-calender" href="#" class="nav-link">
                             <svg height="30" width="200">
                     <text x="0" y="30" fill="white">1</text>
                   </svg>
@@ -98,10 +98,39 @@
                     </label> -->
 
                     <button id=button> Search The MARVEL API</button><br><br>
-                </form>
+                    <<<<<<< HEAD </form>
             </div>
         </div>
         <!-- <div class="c"><p>c</p></div>
+=======
+                  </form>
+                </div></div>
+
+                <div class="center">
+                  <% if(marvels){ marvels.forEach(
+                    (marvel) => { console.log(marvel); %>
+                      <img class="m-image" src=<%=marvel.image %>><br>
+                      <p class="m-title">Name :  <%= marvel.name %></p><br><br>
+                      <p class="m-title"> Description :  <%= marvel.description %></p><br><br>
+                      
+                <form action ='/searches' method="POST" class="booktitle">
+                  <input type="hidden" name="search" value="<%=marvel.name%>"/>
+                  <button class="m-title" type="submit"> View Details </button>
+
+      
+              </form>
+              <form action ='/delete' method="POST" class="booktitle">
+                <input type="hidden" name="id" value="<%=marvel.id%>"/>
+                <button class="m-title" type="submit"> Remove Marvel </button>
+
+    
+            </form>
+                    <%}
+
+                  );}%>
+                </div>
+                    <!-- <div class="c"><p>c</p></div>
+>>>>>>> c70a806c452ef9dac635bfb28847cf5a683d83b3
                     <div class="d"><p>d</p></div> -->
         <!-- </div>   -->
         <!-- <div class='efghbox'>
