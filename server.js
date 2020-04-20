@@ -33,6 +33,19 @@ app.get('/test', (req, res) => {
   res.status(200).send('Hello ');
 });
 
+///////////////////////////////// Aboutus Route \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+app.get('/aboutus', aboutUsHandler)
+
+function aboutUsHandler(req, res) {
+  res.render('pages/aboutUs')  
+}
+
+
+
+
+///////////////////////////////////////////////////////
+
 //Render index
 app.get('/main', (req, res) => {
   res.render('index');
