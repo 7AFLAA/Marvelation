@@ -14,8 +14,9 @@
 <main>
     <% favChar.forEach( element => { %>
          <div>
-        <img src=<%= element.thumbnail.path%>/portrait_xlarge.jpg>
-        <h1><%= element.name %> </h1>
+        <img src=<%= element.thumbnail%>>
+        <h1><%= element.char_name %> </h1>
+        <h1>Rate me Homie: <%= element.rating %> </h1>
     </div>
          
     <% }); %>
