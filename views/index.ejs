@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <%- include('layout/head') %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 1</title>
+    <link rel="stylesheet" href="/styles/css/reset.css">
+    <link rel="stylesheet" href="/styles/css/base.css">
+    <link rel="stylesheet" href="/styles/css/layout.css">
+    <link rel="stylesheet" href="/styles/css/modules.css">
+    <link rel="stylesheet" href="/styles/css/nav1.css"> 
 </head>
-
 <body>
-    <header> <img src="img/logo.png" alt="MARVELATION" id="pLogo">
+    <header>    <img src="img/logo.png" alt="MARVELATION" id="pLogo">
 
-        <!--create a Responsive Navbar with CSS-->
-        <div class="ss-body">
-            <!--create abody Navbar with CSS-->
-
-            <div class="ss-navs">
-                <ul class="ss-navs-nav">
-                    <li class="ss-logo">
-                        <a href="#" class="nav-link">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
+    <!--create a Responsive Navbar with CSS-->
+     <div class="ss-body">
+      <!--create abody Navbar with CSS-->
+    
+       <div class="ss-navs">
+        <ul class="ss-navs-nav">
+          <li class="ss-logo">
+            <a href="#" class="nav-link">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
                 <g class="fa-group">
                   <path fill="currentColor"
                     d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
@@ -26,35 +33,35 @@
                     class="fa-primary"></path>
                 </g>
               </svg>
-
-                            <span class="link-text">Go TO...</span>
-                        </a>
-                    </li>
-
-                    <!--============================================-->
-                    <li class="ss-navs-item">
-                        <a id="ss-calender" href="#" class="nav-link">
-                            <svg height="30" width="200">
+    
+              <span class="link-text">Go TO...</span>
+            </a>
+          </li> 
+    
+          <!--============================================-->
+          <li class="ss-navs-item">
+            <a id="ss-calender" href="/" class="nav-link">
+                <svg height="30" width="200">
                     <text x="0" y="30" fill="white">1</text>
                   </svg>
-                            <span class="link-text">HOME</span>
-                        </a>
-                    </li>
-                    <li class="ss-navs-item">
-                        <a id="ss-calender" href="search" class="nav-link">
-                            <svg height="30" width="200">
+                <span class="link-text">HOME</span>
+              </a>
+            </li>
+            <li class="ss-navs-item">
+                <a id="ss-calender" href="search" class="nav-link">
+                    <svg height="30" width="200">
                         <text x="0" y="30" fill="white">2</text>
                       </svg>
-                            <span class="link-text">SEARCH</span>
-                        </a>
-                    </li>
-                    <li class="ss-navs-item">
-                        <a id="ss-calender" href="#" class="nav-link">
-                            <svg height="30" width="200">
+                    <span class="link-text">SEARCH</span>
+                  </a>
+                </li>
+                <li class="ss-navs-item">
+                    <a id="ss-calender" href="#" class="nav-link">
+                        <svg height="30" width="200">
                             <text x="0" y="30" fill="white">3</text>
                           </svg>
-                            <span class="link-text">MOVIES LIST</span>
-                        </a>
+                        <span class="link-text">MOVIES LIST</span>
+                      </a>
                     </li>
                     <li class="ss-navs-item">
                         <a id="ss-calender" href="#" class="nav-link">
@@ -62,63 +69,67 @@
                                 <text x="0" y="30" fill="white">4</text>
                               </svg>
                             <span class="link-text">CHAR BY GENER</span>
-                        </a>
-                    </li>
+                          </a>
+                        </li>
                     <li class="ss-navs-item">
-                        <a id="ss-calender" href="/aboutus" class="nav-link">
+                        <a id="ss-calender" href="#" class="nav-link">
                             <svg height="30" width="200">
                                 <text x="0" y="30" fill="white">5</text>
                               </svg>
                             <span class="link-text">ABOUT US</span>
-                        </a>
-                    </li>
-    </header>
+                          </a>
+                        </li>
+                         </header>
     <main>
-
-        <div class="b">
-            <p></p>
+      
+        <div class="b"><p></p>
 
         </div>
-        <div class="allbox">
-            <div class='cd'>
+             <div class="allbox">
+                <div class='cd'>
 
-                <h2> Search By a name Of charecter </h2>
-                <form id="form" action="/searches" method="post">
+                  <h2> Search By a name Of charecter </h2>
+                  <form id="form" action="/searches" method="post">
                     <input id="thesearchbox" name="search" placeholder='Enter a name of marvel ' style="color: black;" />
                     <br><br>
-
-
+          
+              
                     <button id=button> Search The MARVEL API</button><br><br>
-                     </form>
-            </div>
-        </div>
-        
                   </form>
                 </div></div>
 
+                
                 <div class="center">
+               
                   <% if(marvels){ marvels.forEach(
                     (marvel) => { console.log(marvel); %>
+                      <div class="flex">
                       <img class="m-image" src=<%=marvel.image %>><br>
                       <p class="m-title">Name :  <%= marvel.name %></p><br><br>
                       <p class="m-title"> Description :  <%= marvel.description %></p><br><br>
                       
                 <form action ='/searches' method="POST" class="booktitle">
                   <input type="hidden" name="search" value="<%=marvel.name%>"/>
-                  <button class="m-title" type="submit"> View Details </button>
+                  <button class="btn" type="submit"> View Details </button>
 
       
               </form>
                <form action ='/delete' method="POST" class="booktitle">
                 <input type="hidden" name="id" value="<%=marvel.id%>"/>
-                <button class="m-title" type="submit"> Remove Marvel </button> 
+                <button class="btn" type="submit"> Remove Marvel </button>
+
+                
 
     
             </form>
-                    <%} );}%>
-               
+                    <%}
+
+                  );}%>
+                  </div>
+                </div>
+
+
     </main>
-
+   
 </body>
-
 </html>
