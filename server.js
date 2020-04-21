@@ -35,15 +35,15 @@ const hash = process.env.HASH;
 
 //Test Route
 app.get('/test', (req, res) => {
-  res.status(200).send('Hello ');
+    res.status(200).send('Hello ');
 });
 
 ///////////////////////////////// Aboutus Route \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-app.get('/aboutus', aboutUsHandler)
+app.get('/aboutus', aboutUsHandler);
 
 function aboutUsHandler(req, res) {
-  res.render('pages/aboutUs')  
+    res.render('pages/aboutUs');
 }
 
 
@@ -169,7 +169,7 @@ app.post('/searches', (req, res) => {
 
 /////////////////////////////////////Movies page code starts here////////////////////////////////////////////////////////////////////////////////
 
-app.get('/moviespage', moviesPageHandler)
+app.get('/moviespage', moviesPageHandler);
 
 function moviesPageHandler(req, res) {
     res.render('pages/searches/movie-show');
@@ -183,30 +183,30 @@ function moviesHandler(req, res) {
             if (moviesRes.body.results.length > 0) {
                 // console.log(moviesRes.body.results);
                 const moviesInfo = moviesRes.body.results.map((element) => {
-                    return new Movie(element)
+                    return new Movie(element);
                 });
                 // let filtered = moviesInfo.filter(value => {
                 //     return value.overview.includes(`super`)
                 // });
                 // console.log(filtered);
-                res.render('movies-index', { movies: moviesInfo })
+                res.render('movies-index', { movies: moviesInfo });
             } else {
-                res.render('notFound')
+                res.render('notFound');
             }
         })
 
     .catch((err) => {
         res.render('error');
-    })
+    });
 
 }
 
 function Movie(element) {
     this.title = (true && element.original_title) || 'TITLE NOT FOUND';
     this.overview = (true && element.overview) || 'DESCRIPTION NOT FOUND';
-    this.image_url = `${element.poster_path}` ? `https://image.tmdb.org/t/p/w500/${element.poster_path}` : `https://www.creativeway.cloud/wp-content/uploads/2018/09/240_F_139166369_NdTDXc0lM57N66868lC66PpsaMkFSwaf.jpg`;
+    this.image_url = element.poster_path ? `https://image.tmdb.org/t/p/w500/${element.poster_path}` : `https://www.aviastore.in/assets/default/image-placeholder.svg`;
     this.released_on = (true && element.release_date) || 'No realesed date available';
-    this.popularity = (true && element.popularity) || 'N/A';
+    this.vote_average = (true && element.vote_average) || 'N/A';
 }
 
 

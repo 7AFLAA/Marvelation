@@ -2,29 +2,45 @@
 <html lang="en">
 
 <head>
-    <%- include('./layout/head') %>
+
+    <link rel="stylesheet" href="../styles/movies.css">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
 </head>
 <header>
-    <!-- <%- include('./layout/header') %> -->
+
 </header>
 
 <body>
-    <ul>
+    <div class='card-effect'>
         <% movies.forEach(element => { %>
-            <li>
-                <p>
-                    <%=element.title %>
-                </p>
-                <p><img src=<%=element.image_url %>></p>
-                <p>
-                    <%=element.overview%>
-                </p>
-                <p>
-                    <%=element.popularity%>
-                </p>
-            </li>
+            <div class='card'>
+                <section>
+                    <div class='front-side'>
+                        <h3> Movie's name:
+                            <%=element.title %>
+                        </h3>
+
+                        <img src=<%=element.image_url %>>
+
+                        <p> IMDB:
+                            <%=element.vote_average%>
+                        </p>
+                    </div>
+                    <div class='back-side'>
+                        <p>
+                            Plot:
+                            <%=element.overview%>
+                        </p>
+                    </div>
+                </section>
+            </div>
             <% }) %>
-    </ul>
+    </div>
+    <script>
+        // $('img').on('click', function() {
+        //     $(this).next('.desc').toggle();
+        // })
+    </script>
 </body>
 
 </html>

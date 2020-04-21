@@ -1,0 +1,79 @@
+
+
+header{
+    background-color: darkred;
+    color:whitesmoke;
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+}
+.a {
+    background-color: darkred;
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.b {
+ 
+    font-size: 20px;
+    font-weight: bold;}
+
+.c{
+    background-color: rgb(50, 50, 149);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.d{
+    background-color: rgb(48, 48, 172);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* desktop */
+@media screen and (min-width:760px) and (max-width:960px){
+   
+
+
+header{
+    background-color: darkred;
+    color:whitesmoke;
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+}
+.a {
+    background-color: darkred;
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.b {
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+.c{
+    background-color: rgb(50, 50, 149);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.d{
+    background-color: rgb(48, 48, 172);
+    color:whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* tablet */
+@media screen and (min-width: 560px){
+   
+
+}
