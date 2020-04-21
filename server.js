@@ -128,20 +128,12 @@ app.get('/error', (request, response) => {
 });
 
 //SEARCHES
-
-// app.get('/searches', (req, res) => {
-//   res.render('pages/index');
-// });
 app.post('/searches', (req, res) => {
 
-    // console.log("here");
-    // consol.log(req);
     let url = 'http://gateway.marvel.com/v1/public/characters?name=' + req.body.search + '&ts=' + ts + '&apikey=' + pubKey + '&hash=' + hash;
-    console.log(url);
     superagent.get(url)
         .then(data => {
 
-            // console.log(data);
             let character = data.body.data.results[0];
 
             let url2 = 'http://gateway.marvel.com/v1/public/comics?characters=' + character.id + '&ts=' + ts + '&apikey=' + pubKey + '&hash=' + hash;
@@ -150,8 +142,6 @@ app.post('/searches', (req, res) => {
                 .then(data => {
 
                     let comics = data.body.data.results;
-                    console.log(comics);
-
 
                     res.render('pages/searches/show', { character: character, comics: comics });
                 })
@@ -182,7 +172,6 @@ function moviesHandler(req, res) {
     superagent(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&query=${req.body.input}`)
         .then((moviesRes) => {
             if (moviesRes.body.results.length > 0) {
-                // console.log(moviesRes.body.results);
                 const moviesInfo = moviesRes.body.results.map((element) => {
                     return new Movie(element);
                 });
@@ -207,7 +196,7 @@ function Movie(element) {
     this.overview = (true && element.overview) || 'DESCRIPTION NOT FOUND';
     this.image_url = element.poster_path ? `https://image.tmdb.org/t/p/w500/${element.poster_path}` : `https://www.aviastore.in/assets/default/image-placeholder.svg`;
     this.released_on = (true && element.release_date) || 'No realesed date available';
-    this.popularity = (true && element.popularity) || 'N/A';
+    this.vote_average = (true && element.vote_average) || 'N/A';
 }
 
 
@@ -230,7 +219,7 @@ app.post('/addmarvel', (req, res) => {
         .then(() => {
             res.redirect('/redirect');
         }).catch(function(err) {
-            console.log(err);
+
         });
 
 });
@@ -240,21 +229,15 @@ app.post('/delete', (req, res) => {
 
     let SQL = 'DELETE FROM marvel WHERE id=$1;';
     let values = [id];
-    console.log(SQL);
-    console.log(values);
-
     client.query(SQL, values)
         .then(() => {
             res.redirect('/redirect');
-        }).catch(function(err) {
-            console.log('ERROR', err);
-        });
+        }).catch(function(err) {});
 });
 
 app.put('/update/:marvelid', updateHandler);
 
 function updateHandler(req, res) {
-    console.log(req);
     let rating = req.body.ratingvalue;
     let idValue = req.params.marvelid;
     const SQL = 'UPDATE marvel SET rating=$1 WHERE id=$2;';
