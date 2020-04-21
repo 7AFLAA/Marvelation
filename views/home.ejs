@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('layout/head') %> 
+     <link rel="stylesheet" href="styles/homeStyles.css">
+</head>
+<body>
+<header>
+    <%- include('layout/header') %> 
+</header>
+<main>
+    <section class="container">
+    <% favChar.forEach( element => { %>
+         <div class="panel">
+        <img src=<%= element.thumbnail%>>
+        <p class="text bottom-right"><%= element.char_name %> </p>
+        <h1>Rate me Homie: <%= element.rating %> </h1>
+    </div>
+    <% }); %>
+</main>
+<footer>
+</footer>
+</body>
+</html>
