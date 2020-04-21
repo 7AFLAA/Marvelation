@@ -2,11 +2,18 @@
 <html>
 
 <head>
-   <%- include('../../layout/head') %> 
+    <title>MARVEL</title>
+
+    <link rel="stylesheet" href="/styles/css/reset.css">
+    <link rel="stylesheet" href="/styles/css/base.css">
+    <link rel="stylesheet" href="/styles/css/layout.css">
+    <link rel="stylesheet" href="/styles/css/modules.css">
+    <link rel="stylesheet" href="/styles/css/nav1.css"> 
 </head>
 
 <body>
     <%
+
 
     function Character(data) {
         this.name = (data.name)? data.name : 'N/A';
@@ -86,7 +93,7 @@
                                   </a>
                                 </li>
                             <li class="ss-navs-item">
-                                <a id="ss-calender" href="/aboutus" class="nav-link">
+                                <a id="ss-calender" href="#" class="nav-link">
                                     <svg height="30" width="200">
                                         <text x="0" y="30" fill="white">5</text>
                                       </svg>
@@ -99,26 +106,30 @@
         <h2> Search Results </h2>
         <% if(character){ data = new Character(character);%>
 
-        <img class="bookimage" src=<%=data.thumbnail %>><br>
+         
 
-            <div class="thebookdetails">
+        <img class="marvelimage" src=<%=data.thumbnail %>><br>
+
+            <div class="themarveldetails">
                     <p class="p1"> ** character Details ** </p><br>
                     
                   
                     
                  
-                    <p class="booktitle">Name :  <%= data.name %></p><br><br>
+                    <p class="marveltitle">Name :  <%= data.name %></p><br><br>
 
-                <p class="booktitle"> Description :  <%= data.description %></p><br><br>
-                <p class="booktitle">Modified :   <%= data.modified %></p><br><br>
+                <p class="marveltitle"> Description :  <%= data.description %></p><br><br>
+                <p class="marveltitle">Modified :   <%= data.modified %></p><br><br>
+
                 <form action ='/addmarvel' method="POST" class="marveltitle">
                   <input type="hidden" name="name" value="<%=data.name%>"/>
                   <input type="hidden" name="image" value="<%=data.thumbnail%>"/>
                   <input type="hidden" name="desc" value="<%=data.description%>"/>
-                  <button class="marveltitle" type="submit"> Save to favorite </button>
+                  <button class="save-marvel" type="submit"> Save This Marvel </button>
 
       
               </form>
+
                 <!-- <p class="booktitle">resourceURI <%= data.resourceURI %></p> -->
                 <!-- <p class="bookauthor"> urls <%=data.urls%></p> -->
             </div><br>
@@ -136,7 +147,7 @@
           <% });
         %>
         </ol>
-
+           
         </div><br><br>
 
 
@@ -156,7 +167,7 @@
                  %>
                   </ol>
                  </div><br>
-                  <div class="co4">Series
+                  <div class="co3">Series
                   <ol>                <%
                       data.series.items.forEach((item) => { %>
                           <li class="comicItem"><%= item.name %></li> 
@@ -168,7 +179,7 @@
 
                 <% }else{
                     %>
-                    <p class="booktitle"> No character Available</p>
+                    <p class="marvelitle"> No character Available</p>
                 <% } %>
             </div>
 
