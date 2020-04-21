@@ -29,6 +29,28 @@ const ts = process.env.TS;
 const pubKey = process.env.MARVEL_API_KEY;
 const hash = process.env.HASH;
 
+// const privKey = process.env.MARVEL_PRIVATE_KEY
+// const hash = md5(ts + privKey + pubKey)
+
+//Test Route
+app.get('/test', (req, res) => {
+    res.status(200).send('Hello ');
+});
+
+///////////////////////////////// Aboutus Route \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+app.get('/aboutus', aboutUsHandler);
+
+function aboutUsHandler(req, res) {
+    res.render('pages/aboutUs');
+}
+
+
+
+
+///////////////////////////////////////////////////////
+
+//Render index
 // Render index
 app.get('/main', (req, res) => {
     res.render('index');
@@ -130,7 +152,7 @@ app.post('/searches', (req, res) => {
 
 /////////////////////////////////////Movies page code starts here////////////////////////////////////////////////////////////////////////////////
 
-app.get('/moviespage', moviesPageHandler)
+app.get('/moviespage', moviesPageHandler);
 
 function moviesPageHandler(req, res) {
     res.render('pages/searches/movie-show');
@@ -144,21 +166,21 @@ function moviesHandler(req, res) {
             if (moviesRes.body.results.length > 0) {
                 // console.log(moviesRes.body.results);
                 const moviesInfo = moviesRes.body.results.map((element) => {
-                    return new Movie(element)
+                    return new Movie(element);
                 });
-                let filtered = moviesInfo.filter(value => {
-                    return value.overview.includes(`super`)
-                });
+                // let filtered = moviesInfo.filter(value => {
+                //     return value.overview.includes(`super`)
+                // });
                 // console.log(filtered);
-                res.render('movies-index', { movies: moviesInfo })
+                res.render('movies-index', { movies: moviesInfo });
             } else {
-                res.render('notFound')
+                res.render('notFound');
             }
         })
 
     .catch((err) => {
         res.render('error');
-    })
+    });
 
 }
 

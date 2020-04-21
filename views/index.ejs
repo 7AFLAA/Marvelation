@@ -79,13 +79,17 @@
                 <form id="form" action="/searches" method="post">
                     <input id="thesearchbox" name="search" placeholder='Enter a name of marvel ' style="color: black;" />
                     <br><br>
+
+
                     <button id=button> Search The MARVEL API</button><br><br>
                 </form>
             </div>
         </div>
+
         </form>
         </div>
         </div>
+
         <div class="center">
             <% if(marvels){ marvels.forEach(
                     (marvel) => { console.log(marvel); %>
@@ -96,15 +100,21 @@
                 <p class="m-title"> Description :
                     <%= marvel.description %>
                 </p><br><br>
+
                 <form action='/searches' method="POST" class="booktitle">
                     <input type="hidden" name="search" value="<%=marvel.name%>" />
                     <button class="m-title" type="submit"> View Details </button>
+
+
                 </form>
                 <form action='/delete' method="POST" class="booktitle">
                     <input type="hidden" name="id" value="<%=marvel.id%>" />
                     <button class="m-title" type="submit"> Remove Marvel </button>
+
+
                 </form>
                 <%} );}%>
+
     </main>
 </body>
 
