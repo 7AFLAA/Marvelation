@@ -12,14 +12,14 @@
 
 </header>
 <main>
-    <section class="grid-container">
+    <section class="container">
     <% favChar.forEach( element => { %>
-
-        <div class="card">
+     
+        <div class="panel">
             <img src=<%= element.thumbnail.path%>/portrait_xlarge.jpg>
-            <h1><%= element.name %> </h1>
-        </div>
-        
+            <p class="text bottom-right"><%= element.name %></p>
+          </div>
+               
         <% }); %>
     </section>
         
