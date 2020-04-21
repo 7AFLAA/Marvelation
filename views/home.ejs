@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%- include('layout/head') %> 
-
+     <link rel="stylesheet" href="styles/homeStyles.css">
 </head>
 
 <body>
@@ -12,14 +12,17 @@
 
 </header>
 <main>
+    <section class="grid-container">
     <% favChar.forEach( element => { %>
-         <div>
-        <img src=<%= element.thumbnail.path%>/portrait_xlarge.jpg>
-        <h1><%= element.name %> </h1>
-    </div>
-         
-    <% }); %>
 
+        <div class="card">
+            <img src=<%= element.thumbnail.path%>/portrait_xlarge.jpg>
+            <h1><%= element.name %> </h1>
+        </div>
+        
+        <% }); %>
+    </section>
+        
 </main>
 <footer></footer>
 
