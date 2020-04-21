@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%- include('layout/head') %> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 1</title>
+    <link rel="stylesheet" href="/styles/css/reset.css">
+    <link rel="stylesheet" href="/styles/css/base.css">
+    <link rel="stylesheet" href="/styles/css/layout.css">
+    <link rel="stylesheet" href="/styles/css/modules.css">
+    <link rel="stylesheet" href="/styles/css/nav1.css"> 
 </head>
 <body>
     <header>    <img src="img/logo.png" alt="MARVELATION" id="pLogo">
-
     <!--create a Responsive Navbar with CSS-->
      <div class="ss-body">
       <!--create abody Navbar with CSS-->
-    
        <div class="ss-navs">
         <ul class="ss-navs-nav">
           <li class="ss-logo">
@@ -26,11 +31,9 @@
                     class="fa-primary"></path>
                 </g>
               </svg>
-    
               <span class="link-text">Go TO...</span>
             </a>
           </li> 
-    
           <!--============================================-->
           <li class="ss-navs-item">
             <a id="ss-calender" href="/" class="nav-link">
@@ -74,45 +77,41 @@
                         </li>
                          </header>
     <main>
-      
         <div class="b"><p></p>
-
         </div>
              <div class="allbox">
                 <div class='cd'>
-
                   <h2> Search By a name Of charecter </h2>
                   <form id="form" action="/searches" method="post">
                     <input id="thesearchbox" name="search" placeholder='Enter a name of marvel ' style="color: black;" />
                     <br><br>
-              
-                    <!-- <label class="container">Title
-                      <input type="radio" name="searchtype" value="title">
-                      <span class="checking"></span>
-                    </label>
-              
-                    <label class="container">Author
-                      <input type="radio" name="searchtype" value="author">
-                      <span class="checking"></span>
-                    </label> -->
-              
                     <button id=button> Search The MARVEL API</button><br><br>
                   </form>
                 </div></div>
-                    <!-- <div class="c"><p>c</p></div>
-                    <div class="d"><p>d</p></div> -->
-                <!-- </div>   -->
-                <!-- <div class='efghbox'>
-                    
-                    <div class="e"><p>e</p></div>
-                    <div class="f"><p>f</p></div>
-                    <div class="g"><p>g</p></div>
-                    <div class="h"><p>h</p></div>
-                </div> -->
-<!--            
-            <div class="ifooter"> -->
-        <!-- </div> -->
+                <div class="center">
+                  <% if(marvels){ marvels.forEach(
+                    (marvel) => { console.log(marvel); %>
+                      <div class="flex">
+                      <img class="m-image" src=<%=marvel.image %>><br>
+                      <p class="m-title">Name :  <%= marvel.name %></p><br><br>
+                      <p class="m-title"> Description :  <%= marvel.description %></p><br><br>
+                <form action ='/searches' method="POST" class="booktitle">
+                  <input type="hidden" name="search" value="<%=marvel.name%>"/>
+                  <button class="btn" type="submit"> View Details </button>
+              </form>
+               <form action ='/delete' method="POST" class="booktitle">
+                <input type="hidden" name="id" value="<%=marvel.id%>"/>
+                <button class="btn" type="submit"> Remove Marvel </button>
+            </form>
+            <h2>rating<%=marvel.rating %></h2>
+            <button class="toggle" type="submit" >Rate me pleaaaase</button>
+            <form action="/update/<%= marvel.id%>?_method=PUT" method="POST" class="toggleform" >
+                <input type="number" name="ratingvalue" value="235555555555555555" placeholder="<%=marvel.rating%>">
+                <button class="reload" type="submit">Rate meeeeeeeeeeeee</button>
+                </form>
+                    <%} );}%>                  
     </main>
-   
 </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+    <script src="js/app.js"></script>
 </html>

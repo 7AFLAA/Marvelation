@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="../styles/movies.css">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<header>
+
+</header>
+
+<body>
+    <div class='card-effect'>
+        <% movies.forEach(element => { %>
+            <div class='card'>
+                <section>
+                    <div class='front-side'>
+                        <h3> Movie's name:
+                            <%=element.title %>
+                        </h3>
+
+                        <img src=<%=element.image_url %>>
+
+                        <p> IMDB:
+                            <%=element.vote_average%>
+                        </p>
+                    </div>
+                    <div class='back-side'>
+                        <p>
+                            Plot:
+                            <%=element.overview%>
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <% }) %>
+    </div>
+    <script>
+        // $('img').on('click', function() {
+        //     $(this).next('.desc').toggle();
+        // })
+    </script>
+</body>
+
+</html>

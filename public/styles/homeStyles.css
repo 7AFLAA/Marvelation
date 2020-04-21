@@ -1,0 +1,37 @@
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    font-family:'Comic Sans', cursive;
+    padding:1vmin;
+}
+
+.panel {
+    background-color:#fff;
+    border:solid 2px #000;
+    box-shadow:0 6px 6px -6px #000;
+    display:inline-block;
+    flex:1 1;
+    height:200px;
+    margin:1vmin;
+    /* overflow:hidden; */
+    position:relative;
+    flex-basis: 100px;
+  }
+
+  .text {
+      color: #000;
+    background-color:#fff;
+    border:solid 2px #000;
+    margin:0;
+    padding:3px 10px;
+  }
+
+
+
+  .bottom-right {
+    bottom:-2px;
+    position:absolute;
+    right:-6px;
+    transform:skew(-15deg);
+  }
+  
