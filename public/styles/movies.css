@@ -1,58 +1,73 @@
-body {
-    background-color: #131311;
-    font-family: 'Courier Prime', monospace;
-}
-
-.card-effect {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: transparent;
-    width: 30%;
-    height: 500px;
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px;
-    margin: 10px;
-}
-
-section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.card:hover section {
-    transform: rotateY(180deg);
-}
-
-.front-side,
-.back-side {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.front-side {
-    /* background-color: #bbb; */
-    color: bisque;
-}
-
-.back-side {
-    background-color: #DC4A4D;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-img {
-    width: 100%;
-    height: 395px;
-}
+    body {
+        background-color: #131311;
+        font-family: 'Courier Prime', monospace;
+    }
+    
+    .card-effect {
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column;
+        align-items: center; */
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        background-color: transparent;
+        width: 30%;
+        height: 500px;
+        /* border: 1px solid #f1f1f1; */
+        perspective: 1000px;
+        margin: 10px;
+    }
+    
+    section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    .card:hover section {
+        transform: rotateY(180deg);
+    }
+    
+    .front-side,
+    .back-side {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .front-side {
+        /* background-color: #bbb; */
+        color: bisque;
+    }
+    
+    .back-side {
+        background-color: rgb(65, 51, 52);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
+    img {
+        width: 100%;
+        height: 395px;
+    }
+    
+    p,
+    h3 {
+        color: lightgrey;
+        margin: 2px;
+        padding: 2px;
+    }
+    
+    @media all and (max-width:400px) {
+        .card-effect {
+            display: none;
+        }
+    }
