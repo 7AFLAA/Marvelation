@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%- include('layout/head') %> 
-
+     <link rel="stylesheet" href="styles/homeStyles.css">
 </head>
 
 <body>
@@ -12,25 +12,21 @@
 
 </header>
 <main>
+    <section class="container">
     <% favChar.forEach( element => { %>
-         <div>
+         <div class="panel">
         <img src=<%= element.thumbnail%>>
-        <h1><%= element.char_name %> </h1>
+        <p class="text bottom-right"><%= element.char_name %> </p>
         <h1>Rate me Homie: <%= element.rating %> </h1>
     </div>
          
     <% }); %>
-
+                
 </main>
-<footer></footer>
+<footer>
 
-
-
-
+</footer>
 
 </body>
-
-
-
 
 </html>
