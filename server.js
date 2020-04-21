@@ -230,7 +230,7 @@ app.post('/addmarvel', (req, res) => {
     .then(() => {
       res.redirect('/redirect');
     }).catch(function(err) {
-      console.log(print, err);
+      console.log('print', err);
     });
 
 });
@@ -247,7 +247,7 @@ app.post('/delete', (req, res) => {
     .then(() => {
       res.redirect('/redirect');
     }).catch(function(err) {
-      console.log(print, err);
+      console.log('print', err);
     });
 });
 
