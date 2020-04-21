@@ -14,16 +14,15 @@
 <main>
     <section class="container">
     <% favChar.forEach( element => { %>
-
-         <div class="panel">
-        <img src=<%= element.thumbnail%>>
-        <p class="text bottom-right" ><%= element.char_name %> </p>
-        <h1>Rate me Homie: <%= element.rating %> </h1>
-    </div>
-         
-    <% }); %>  
+     
+        <div class="panel">
+            <img src=<%= element.thumbnail.path%>/portrait_xlarge.jpg>
+            <p class="text bottom-right"><%= element.name %></p>
+          </div>
+               
+        <% }); %>
     </section>
-
+        
 </main>
 <footer></footer>
 
