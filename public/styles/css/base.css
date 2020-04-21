@@ -1,0 +1,312 @@
+
+     /* mobile */
+ body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://wallpapercave.com/wp/wp2903386.gif);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+overflow: scroll;
+
+   
+}
+header{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 90%;
+} 
+
+h2{
+    color:white;
+    padding-top: 5px;
+    font-size: 24px;
+    width: auto;
+    margin-bottom: 450px;
+    margin-top: 20px;
+   
+   
+    
+}
+
+
+#thesearchbox{
+    width: auto;
+    height: 50px;
+    color:white;
+    background-color:white;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+  
+    
+ 
+   
+}
+
+#button{
+
+    width: auto;
+    height: 50px;
+    color:white;
+    background-color: darkred;
+    font-size: 24px;
+    border-radius: 20px;
+    margin-top: -20px;
+    margin-bottom: -50px;
+  
+   
+}
+
+
+p{
+color:white;
+font-size: 14px;;
+}
+
+ol li {
+    color:whitesmoke;
+font-size: 14px;;
+}
+
+.co1{
+float: left;
+background-color:darkred;
+opacity: 0.8;
+border-radius: 20px;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: 10px;
+margin-right: 100px;
+color:wheat;
+font-size: 40px;
+font-weight: bolder;
+height: auto;
+
+}
+
+.co2{
+    float: left;
+    background-color: darkred;
+    opacity: 0.8;
+    display: block;
+    border-radius: 20px;
+    margin-top: 50px;
+margin-bottom: 50px;
+margin-left: 10px;
+margin-right: 100px;
+color:wheat;
+font-size: 40px;
+font-weight: bolder;
+height: auto;
+    
+    }
+  
+
+    .co3{
+        float: left;
+        background-color:darkred;
+        opacity: 0.8;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 100px;
+        color:wheat;
+font-size: 40px;
+font-weight: bolder;
+height: auto;
+        } 
+
+        .co4{
+            float: left;
+            background-color:darkred;
+            opacity: 0.8;
+            display: block;
+            border-radius: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 10px;
+            margin-right: 100px;
+            color:wheat;
+            font-size: 40px;
+            font-weight: bolder;
+            }
+
+            .marvelimage{
+            width: 350px;
+            height: 520px;
+            border-radius: 10px;
+            margin-top: 50;
+            float: left;
+            margin-top: 50px;
+          
+        
+            } 
+
+            .themarveldetails{
+                float: left;
+                margin-left: 100px; 
+                /* margin-right: 100px; */
+                 margin-top: -450px;
+                padding-left: 260px;
+                
+            } 
+
+            .marveltitle{
+                font-size: 26px;
+            }
+
+            .p1{
+                color:wheat;
+                font-size: 30px;
+                font-weight: bolder;
+                margin-top: -50px;
+            }
+
+            ol li {
+
+            font-size: 20px;
+            }
+
+          .com{
+              width: 400px;
+              height: 500px;
+          }
+           .m-image{
+               width:150px;
+               height:200px;
+             /* margin-left: 50px; */
+               border-radius: 300px;
+               margin-bottom: 20px;
+               margin-top: 40px;
+              /* float: left; */
+              align-items: center;
+              
+              
+           }
+
+           .m-title{
+               width:200px;
+               font-size: 18px;
+               /* margin-left: 50px; */
+               margin-top: 20px;
+               float: left;
+               text-align: center;
+               /* border-radius: 30px; */
+               padding: 10px;
+              
+                
+               
+
+           }
+
+         .allbox{
+             margin-bottom: 10px;
+             
+         }
+         
+        .save-marvel{
+            width: 200px;
+            height: 70px;
+            color:whitesmoke;
+            background-color: darkred;
+            border-radius: 40px;
+            font-size: 18px;
+            font-weight: bolder;
+
+        }
+        
+       .btn{
+
+        width:170px;
+        /* margin-left: 50px; */
+        margin-top: 20px;
+        margin-left: 22px;
+        float: left;
+        border-radius: 20px;
+        height: 40px;
+        color: darkred;
+        font-size: 18px;
+        font-weight: bolder;
+        padding: 10px;
+        
+       }
+
+
+   .btn:hover {
+  background-color: darkred;
+  color: white;
+  
+}
+
+.center{
+  
+    width: auto;
+    height:auto;
+    background-color:darkred;
+    opacity: 0.8;
+    /* opacity: 0.8; */
+    border-radius: 20px;
+    margin: auto;
+    /* display: flex; */
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+    margin-bottom: 100px;
+
+}
+   
+ 
+
+center.flex{
+
+border:1 px solid whitesmoke;
+        display: grid;
+       grid-template-columns: 250px 250px 250px 250px;
+       grid-column-gap: 80px;
+       border-radius: 10px;
+       grid-row-gap: 80pxpx;
+}
+
+
+
+
+
+          
+            /* tablet */
+@media screen and (min-width:560px){
+    main{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+}
+
+/* desktop */
+@media screen and (min-width:760px) and (max-width:960px){
+    main{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+   
+}
