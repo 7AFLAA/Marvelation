@@ -1,8 +1,8 @@
 'use strict'
 
-$(document).ready(()=>{
+$(document).ready(() => {
     $('.toggleform').hide();
-    $('.toggle').on('click', ()=>{
+    $('.toggle').on('click', () => {
         $('.toggleform').toggle();
     })
 })
