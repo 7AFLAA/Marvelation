@@ -1,22 +1,27 @@
+
+@import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
 .container{
     display:flex;
     flex-wrap:wrap;
     font-family:'Comic Sans', cursive;
     padding:1vmin;
 }
-
+main{
+  margin-left: 5rem;
+}
 .panel {
-    background-color:#fff;
-    border:solid 2px #000;
-    box-shadow:0 6px 6px -6px #000;
-    display:inline-block;
-    flex:1 1;
-    height:200px;
-    margin:1vmin;
-    /* overflow:hidden; */
-    position:relative;
-    flex-basis: 100px;
-  }
+  background-color: #fff;
+  border: solid 2px #000;
+  box-shadow: 0 6px 6px -6px #000;
+  display: inline-block;
+  flex: 1 1;
+  height: 224px;
+  /* margin: 1vmin; */
+  /* overflow: hidden; */
+  position: relative;
+  margin: 26px;
+}
 
   .text {
       color: #000;
@@ -34,4 +39,67 @@
     right:-6px;
     transform:skew(-15deg);
   }
-  
+  .panel:nth-child(1) {
+    flex-basis: 100px;
+   
+  }
+  .panel:nth-child(2) {
+    flex-basis: 100px;
+  }
+  .panel:nth-child(3) {
+    flex-basis: 100px;
+  }
+  .panel:nth-child(4) {
+    flex-basis: 100px;
+  }
+  .panel:nth-child(5) {
+    flex-basis: 100px;
+  }
+  .panel:nth-child(6) {
+    flex-basis: 100px;
+  }
+  .panel:nth-child(7) {
+    flex-basis: 100px;
+  }
+  .panel:nth-child(8) {
+    flex-basis: 100px;
+  }
+  .panel:nth-child(9) {
+    flex-basis: 100px;
+  }
+  #header {
+    background: url(../../images/Marvel-Vs.-DC.jpg);
+    text-align: center;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+#header-text {
+  padding: 47px;
+  font-size: -webkit-xxx-large;
+  font-family: "Bangers";
+  margin: 0 0 -1em 0;
+  text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
+  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+  -moz-transform: rotate(-10deg) skew(-10deg, 0);
+  -ms-transform: rotate(-10deg) skew(-10deg, 0);
+  -o-transform: rotate(-10deg) skew(-10deg, 0);
+  transform: rotate(-10deg) skew(-10deg, 0);
+  padding-bottom: 44px;
+  /* float: left; */
+  font-weight: 900;
+  width: 100%;
+}
+
+span{
+  font-family: Bangers, sans-serif;
+    font-size: 9em;
+    color: #eee;
+    letter-spacing: 0.065em;
+    text-shadow: 0.035em 0.035em
+}
+
+body{
+  background-color: #131311 ;
+}
