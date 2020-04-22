@@ -34,6 +34,7 @@ main{
     flex-direction: column;
     text-align: center;
     height: 90%;
+    margin-left:1rem;
 } 
 
 h2{
@@ -206,21 +207,16 @@ height: auto;
               
            }
 
-           .m-title{
-               width:200px;
-               font-size: 18px;
-               /* margin-left: 50px; */
-               margin-top: 20px;
-               float: left;
-               text-align: center;
-               /* border-radius: 30px; */
-               padding: 20px;
-              
-                
-               
-
-           }
-
+           .m-title {
+            width: 306px;
+            font-size: 18px;
+            margin-left: -9px;
+            margin-top: 0;
+            float: left;
+            text-align: center;
+            /* border-radius: 30px; */
+            padding: 14px;
+        }
          .allbox{
              margin-bottom: 10px;
              
@@ -237,22 +233,19 @@ height: auto;
 
         }
         
-       .btn{
-
-        width:170px;
-        /* margin-left: 50px; */
-        margin-top: 20px;
-        margin-left: 30px;
-        float: left;
-        border-radius: 20px;
-        height: 40px;
-        color: darkred;
-        font-size: 18px;
-        font-weight: bolder;
-        padding: 10px;
-       
-        
-       }
+        .btn {
+            width: 170px;
+            /* margin-left: 50px; */
+            margin-top: 13px;
+            margin-left: 3px;
+            float: left;
+            border-radius: 20px;
+            height: 40px;
+            color: darkred;
+            font-size: 18px;
+            font-weight: bolder;
+            padding: 10px;
+        }
 
 
    .btn:hover {
@@ -289,6 +282,28 @@ border:1 px solid whitesmoke;
        border-radius: 10px;
        grid-row-gap: 80pxpx;
 }
+
+.toggle {
+    width: 180px;
+    /* margin-left: 50px; */
+    margin-top: 10px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 20px;
+    height: 40px;
+    color: darkred;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px;
+}
+h3 {
+    margin-right: 5px;
+    margin-top: 5px;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+
 /* main {
     margin-left: 16rem;
     padding: 1rem;

@@ -8,6 +8,12 @@ header{
    text-align: center;
    vertical-align: middle;
 }
+#showPageMain{
+    
+        margin-left: -21rem;
+    }
+
+
 .a {
     background-color: darkred;
     color:whitesmoke;
@@ -71,9 +77,5 @@ header{
     font-size: 40px;
     font-weight: bold;
 }
-
-/* tablet */
-@media screen and (min-width: 560px){
-   
 
 }

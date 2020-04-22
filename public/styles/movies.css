@@ -1,8 +1,10 @@
     body {
-        background-color: #131311;
+        background-color: rgb(0, 0, 0);
         font-family: 'Courier Prime', monospace;
     }
     
+    
+
     .card-effect {
         display: flex;
         justify-content: center;
@@ -14,7 +16,7 @@
     
     .card {
         background-color: transparent;
-        width: 50%;
+        width: 25%;
         height: 630px;
         /* border: 1px solid #f1f1f1; */
         perspective: 1000px;
@@ -76,7 +78,7 @@
     } */
     
     input[type=text] {
-        width: 130px;
+        width: 20rem;
         box-sizing: border-box;
         border: 2px solid #ccc;
         border-radius: 4px;
@@ -96,3 +98,55 @@
     form {
         margin: 110px;
     }
+
+    #deadpool{
+
+        width: 350px;
+        height: 350px;
+        margin-left: 21%;
+        margin-top: -119px;
+
+    }
+
+    #bubble {
+        margin-left: 5rem;
+        background-image: url(https://cdn.pixabay.com/photo/2013/07/12/19/02/bubble-154255_960_720.png);
+        /* color: white; */
+        /* background-position: 200px 200px; */
+        height: 250px;
+        width: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-top: 39px;
+        margin-left: 30%;
+    }
+    #header {
+        background: url(../../images/Marvel-Vs.-DC.jpg);
+        text-align: center;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #header-text {
+      padding: 47px;
+      font-size: -webkit-xxx-large;
+      font-family: "Bangers";
+      margin: 0 0 -1em 0;
+      text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
+      -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+      -moz-transform: rotate(-10deg) skew(-10deg, 0);
+      -ms-transform: rotate(-10deg) skew(-10deg, 0);
+      -o-transform: rotate(-10deg) skew(-10deg, 0);
+      transform: rotate(-10deg) skew(-10deg, 0);
+      padding-bottom: 44px;
+      /* float: left; */
+      font-weight: 900;
+      width: 100%;
+    }
+
+    #imageContainer{
+        margin-top: 0px;
+    }
+    
