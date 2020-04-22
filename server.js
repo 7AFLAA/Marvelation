@@ -219,10 +219,7 @@ app.post('/addmarvel', (req, res) => {
   client.query(SQL, values)
     .then(() => {
       res.redirect('/redirect');
-    }).catch(function(err) {
-
     });
-
 });
 // delete marvel from Data
 app.post('/delete', (req, res) => {
@@ -233,8 +230,7 @@ app.post('/delete', (req, res) => {
   client.query(SQL, values)
     .then(() => {
       res.redirect('/redirect');
-    }).catch(function(err) {
-    });
+    }).catch(function(err) {});
 });
 
 app.put('/update/:marvelid', updateHandler);
