@@ -36,10 +36,11 @@
             </div>
             <% }) %>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
     <script>
-        // $('img').on('click', function() {
-        //     $(this).next('.desc').toggle();
-        // })
+        $('.card').click(function () {
+            $(this).toggleClass('focus');
+        });
     </script>
 </body>
 

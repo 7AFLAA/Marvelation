@@ -110,6 +110,7 @@ app.get('/redirect', (req, res) => {
 });
 
 app.get('/search', (req, res) => {
+    
     let SQL = 'SELECT * FROM marvel ';
     client.query(SQL)
         .then(data => {
@@ -128,9 +129,9 @@ app.get('/error', (request, response) => {
 });
 
 //SEARCHES
-app.post('/searches', (req, res) => {
-
-    let url = 'http://gateway.marvel.com/v1/public/characters?name=' + req.body.search + '&ts=' + ts + '&apikey=' + pubKey + '&hash=' + hash;
+app.post('/searches', (req, res) => {    
+    
+    let url = 'http://gateway.marvel.com/v1/public/characters?name='+req.body.search+'&ts='+ts+'&apikey='+pubKey +'&hash='+hash;
     superagent.get(url)
         .then(data => {
 
