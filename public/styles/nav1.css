@@ -95,9 +95,9 @@
     margin-top: auto;
   }
   main {
-    margin-left: 16rem;
+    margin-left: -190px;
     padding: 1rem;
-  }
+}
   .nav-link {
     display: flex;
     align-items: center;

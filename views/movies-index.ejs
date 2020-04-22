@@ -2,15 +2,24 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/a20d671700.js" crossorigin="anonymous"></script>
+
     <%- include('layout/head') %>
         <link rel="stylesheet" href="../styles/movies.css">
+        <link rel="stylesheet" href="../styles/homeStyles.css">
+
         <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
 </head>
 <header>
+    <div id="header">
+        <p id="header-text"> Marvelation </p> 
+        
+     </div>
     <%- include('layout/header') %>
 </header>
 
 <body>
+    <main>
     <div class='card-effect'>
         <% movies.forEach(element => { %>
             <div class='card'>
@@ -36,12 +45,15 @@
             </div>
             <% }) %>
     </div>
+</main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
     <script>
         $('.card').click(function () {
             $(this).toggleClass('focus');
         });
     </script>
+   
 </body>
 
 </html>
