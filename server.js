@@ -111,12 +111,12 @@ app.get('/redirect', (req, res) => {
 
 app.get('/search', (req, res) => {
 
-  let SQL = 'SELECT * FROM marvel ';
-  client.query(SQL)
-    .then(data => {
-      res.render('index', { marvels: data.rows });
-      // res.render('pages/indexshow');
-    });
+    let SQL = 'SELECT * FROM marvel ';
+    client.query(SQL)
+        .then(data => {
+            res.render('index', { marvels: data.rows });
+            // res.render('pages/indexshow');
+        });
 });
 
 
@@ -130,6 +130,10 @@ app.get('/error', (request, response) => {
 
 //SEARCHES
 app.post('/searches', (req, res) => {
+
+    let url = 'http://gateway.marvel.com/v1/public/characters?name=' + req.body.search + '&ts=' + ts + '&apikey=' + pubKey + '&hash=' + hash;
+    superagent.get(url)
+        .then(data => {
 
   let url = 'http://gateway.marvel.com/v1/public/characters?name='+req.body.search+'&ts='+ts+'&apikey='+pubKey +'&hash='+hash;
   superagent.get(url)
@@ -212,25 +216,21 @@ app.post('/addmarvel', (req, res) => {
   let SQL = 'INSERT INTO marvel (name, image, description,rating) VALUES ($1, $2, $3,$4)';
   let values = [name, image, desc, 0];
 
-  client.query(SQL, values)
-    .then(() => {
-      res.redirect('/redirect');
-    }).catch(function(err) {
-
-    });
-
+    client.query(SQL, values)
+        .then(() => {
+            res.redirect('/redirect');
+        })
 });
 // delete marvel from Data
 app.post('/delete', (req, res) => {
-  let { id } = req.body;
+    let { id } = req.body;
 
-  let SQL = 'DELETE FROM marvel WHERE id=$1;';
-  let values = [id];
-  client.query(SQL, values)
-    .then(() => {
-      res.redirect('/redirect');
-    }).catch(function(err) {
-    });
+    let SQL = 'DELETE FROM marvel WHERE id=$1;';
+    let values = [id];
+    client.query(SQL, values)
+        .then(() => {
+            res.redirect('/redirect');
+        }).catch(function(err) {});
 });
 
 app.put('/update/:marvelid', updateHandler);
