@@ -30,7 +30,7 @@
         transform-style: preserve-3d;
     }
     
-    .card:hover section {
+    .card.focus section {
         transform: rotateY(180deg);
     }
     
