@@ -102,12 +102,12 @@
                         <input type="hidden" name="id" value="<%=marvel.id%>" />
                         <button class="btn" type="submit"> Remove Marvel </button>
                     </form>
-                    <h2>rating
+                    <h3>rating
                         <%=marvel.rating %>
-                    </h2>
+                    </h3>
                     <button class="toggle" type="submit">Rate me pleaaaase</button>
                     <form action="/update/<%= marvel.id%>?_method=PUT" method="POST" class="toggleform">
-                        <input type="number" name="ratingvalue" value="235555555555555555" placeholder="<%=marvel.rating%>">
+                        <input type="number" name="ratingvalue" value="" placeholder="<%=marvel.rating%>" min="0" max="100">
                         <button class="reload" type="submit">Rate meeeeeeeeeeeee</button>
                     </form>
                     <%} );}%>
