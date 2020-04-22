@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lab 1</title>
+    <title>MARVELATION</title>
     <link rel="stylesheet" href="/styles/css/reset.css">
     <link rel="stylesheet" href="/styles/css/base.css">
     <link rel="stylesheet" href="/styles/css/layout.css">
@@ -105,10 +105,10 @@
                     <h3>rating
                         <%=marvel.rating %>
                     </h3>
-                    <button class="toggle" type="submit">Rate me pleaaaase</button>
+                    <button class="toggle" type="submit">Rate me </button>
                     <form action="/update/<%= marvel.id%>?_method=PUT" method="POST" class="toggleform">
                         <input type="number" name="ratingvalue" value="" placeholder="<%=marvel.rating%>" min="0" max="100">
-                        <button class="reload" type="submit">Rate meeeeeeeeeeeee</button>
+                        <button class="reload" type="submit">Rate</button>
                     </form>
                     <%} );}%>
     </main>
