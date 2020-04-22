@@ -14,23 +14,22 @@
     
     .card {
         background-color: transparent;
-        width: 30%;
-        height: 500px;
+        width: 50%;
+        height: 630px;
         /* border: 1px solid #f1f1f1; */
         perspective: 1000px;
-        margin: 10px;
     }
     
     section {
         position: relative;
         width: 100%;
-        height: 100%;
         text-align: center;
-        transition: transform 0.8s;
+        transition: transform 0.5s;
         transform-style: preserve-3d;
+        cursor: pointer;
     }
     
-    .card:hover section {
+    .card.focus section {
         transform: rotateY(180deg);
     }
     
@@ -44,30 +43,56 @@
     }
     
     .front-side {
-        /* background-color: #bbb; */
         color: bisque;
     }
     
     .back-side {
-        background-color: rgb(65, 51, 52);
-        color: white;
+        background-color: rgb(58, 44, 44);
+        color: gainsboro;
         transform: rotateY(180deg);
     }
     
     img {
-        width: 100%;
-        height: 395px;
+        width: 85%;
+        height: 420px;
     }
     
     p,
     h3 {
-        color: lightgrey;
-        margin: 2px;
-        padding: 2px;
+        margin: 15px;
     }
     
+    #para {
+        background-color: gray;
+        padding: 28px 20px;
+        overflow: auto;
+        height: 420px;
+    }
+    /*     
     @media all and (max-width:400px) {
         .card-effect {
             display: none;
         }
+    } */
+    
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('./searchIcon.png');
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    input[type=text]:focus {
+        width: 100%;
+    }
+    
+    form {
+        margin: 110px;
     }
