@@ -1,8 +1,14 @@
-main{
+main {
+  margin-left: 0rem;
+  padding: 1rem;
+}
+
+.maincontainer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 0px 100px
 }
 
 .flip-card {
@@ -23,8 +29,8 @@ main{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+  /* Do an horizontal flip when you click the mouse over the flip box container */
+  .flip-card.focus .flip-card-inner {
     transform: rotateY(180deg);
   }
   
