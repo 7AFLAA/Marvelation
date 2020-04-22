@@ -2,12 +2,20 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/a20d671700.js" crossorigin="anonymous"></script>
+
     <%- include('../../layout/head') %>
         <link rel="stylesheet" href="../../styles/movies.css">
+    
         <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
 
 </head>
 <header>
+    <div id="header">
+        <p id="header-text"> Marvelation </p> 
+        
+     </div>
+ 
     <%- include('../../layout/header') %>
 </header>
 
@@ -21,7 +29,14 @@
         </label>
 
         </fieldset>
+
     </form>
+    <section id="imageContainer">
+    <div id="bubble" > <br> <br> 
+        <span >Type a movie name <br> then hit  enter <br> or I <br> will hit you</span>
+    </div>
+    <img id="deadpool" src="/images/deadpool.jpg" alt="">  
+</section>
 </body>
 
 </html>

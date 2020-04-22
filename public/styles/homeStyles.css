@@ -8,7 +8,7 @@
     padding:1vmin;
 }
 main{
-  margin-left: 5rem;
+  margin-left:5rem;
 }
 .panel {
   background-color: #fff;
@@ -21,6 +21,8 @@ main{
   /* overflow: hidden; */
   position: relative;
   margin: 26px;
+  flex-basis: 100px;
+
 }
 
   .text {
@@ -39,34 +41,7 @@ main{
     right:-6px;
     transform:skew(-15deg);
   }
-  .panel:nth-child(1) {
-    flex-basis: 100px;
-   
-  }
-  .panel:nth-child(2) {
-    flex-basis: 100px;
-  }
-  .panel:nth-child(3) {
-    flex-basis: 100px;
-  }
-  .panel:nth-child(4) {
-    flex-basis: 100px;
-  }
-  .panel:nth-child(5) {
-    flex-basis: 100px;
-  }
-  .panel:nth-child(6) {
-    flex-basis: 100px;
-  }
-  .panel:nth-child(7) {
-    flex-basis: 100px;
-  }
-  .panel:nth-child(8) {
-    flex-basis: 100px;
-  }
-  .panel:nth-child(9) {
-    flex-basis: 100px;
-  }
+  
   #header {
     background: url(../../images/Marvel-Vs.-DC.jpg);
     text-align: center;
@@ -94,10 +69,10 @@ main{
 
 span{
   font-family: Bangers, sans-serif;
-    font-size: 9em;
+    font-size: 4rem;
     color: #eee;
-    letter-spacing: 0.065em;
-    text-shadow: 0.035em 0.035em
+    /* letter-spacing: 0.065em; */
+    /* text-shadow: 0.035em 0.035em */
 }
 
 body{

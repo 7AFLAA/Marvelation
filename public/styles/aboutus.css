@@ -18,7 +18,10 @@ main {
     border: 1px solid #f1f1f1;
     perspective: 1000px;
   }
-  
+  img{
+    width: 300px;
+    height: 300px;
+  }
   /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;

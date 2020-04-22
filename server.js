@@ -80,7 +80,7 @@ app.get('/', (req, res) => {
       let randomNumber = getRandomInt(0, savedData.length);
       randomChar.push(savedData[randomNumber]);
 
-      for (let i = 0; i < 9; i++) {
+      for (let i = 0; i < 11; i++) {
         randomNumber = getRandomInt(0, savedData.length);
         randomChar.push(savedData[randomNumber]);
       }
@@ -203,10 +203,6 @@ function Movie(element) {
 
 
 /////////////////////////////////////Movies page code ends here////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 
 // Add Marvel To DataBase
